@@ -10,7 +10,8 @@
   "author": "\"Abdul Wahab Amar\"",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
   },
   "devDependencies": {
     "colors": "^1.4.0",
