@@ -1,0 +1,19 @@
+{
+  "name": "shopwaver",
+  "version": "1.0.0",
+  "description": "\"This is an eccomrece website\" ",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "\"Abdul Wahab Amar\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.9"
+  }
+}
