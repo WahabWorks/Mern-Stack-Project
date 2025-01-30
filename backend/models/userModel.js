@@ -1,12 +1,12 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose"
 
 const userSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true,
         trim:true,
-        minlength: [8, 'Name must be at least 3 characters long'], // Custom message for minlength
-        maxlength: [20, 'Name cannot exceed 50 characters'], // Custom message for maxlength
+        // minlength: [3, 'Name must be at least 3 characters long'], // Custom message for minlength
+        // maxlength: [20, 'Name cannot exceed 50 characters'], // Custom message for maxlength
     },
     email:{
         type:String,
@@ -18,12 +18,12 @@ const userSchema = new mongoose.Schema({
     password:{
         type: String,
         required:true,
-        minlength: 8
+        // minlength: 2
     },
      role: {
       type: String,
     //   enum: ['admin', 'user'],
-      default: 'user'
+      default: "user"
      },
      createdAt: {
       type: Date,
@@ -36,4 +36,4 @@ const userSchema = new mongoose.Schema({
 {timestamps:true}
 )
 
-export default mongoose.Model("User",userSchema)
+export default mongoose.model("User",userSchema)

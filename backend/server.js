@@ -12,11 +12,10 @@ const server = express();
 
 //Middleware
 server.use(morgan("dev"));
+server.use(express.json());
 
 //importing routes
 import userRoutes from "./routes/userRoutes.js";
-// http://localhost:8080
-// http://localhost:8080/api/v1/users
 
 server.use("/api/v1/users",userRoutes)
 
