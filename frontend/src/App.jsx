@@ -1,10 +1,14 @@
-
-
- function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import RegisterPage from './pages/RegisterPage'
+export default function App() {
   return (
-    <h1 class="text-4xl  bg-black text-white">
-    Hello world!
-  </h1>
+    <>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/register" element={<RegisterPage/>} />
+        </Routes>
+    </BrowserRouter>
+            
+    </>
   )
 }
-export default App;
