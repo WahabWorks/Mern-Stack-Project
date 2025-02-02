@@ -6,4 +6,8 @@ const encryptPassword = async(plainPassword)=>{
     return encryptedPassword
 }
 
-export {encryptPassword};
+const matchPassword = async (userPassword,hashedPassword)=>{
+    return bcrypt.compare(userPassword, hashedPassword);
+}
+
+export {encryptPassword,matchPassword};
